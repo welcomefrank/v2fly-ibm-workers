@@ -54,7 +54,7 @@ jobs:
         cat > manifest.yml << EOF
         ---
         applications:
-        - name: ibmdalas
+        - name: ibmdalas.us-south.cf.appdomain.cloud
           memory: 256M
           disk_quota: 1024M
           routes:
