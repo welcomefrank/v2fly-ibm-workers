@@ -54,7 +54,7 @@ jobs:
         cat > manifest.yml << EOF
         ---
         applications:
-        - name: ibmdalas
+        - name: v2ray
           memory: 256M
           disk_quota: 1024M
           routes:
