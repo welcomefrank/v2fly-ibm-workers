@@ -5,7 +5,7 @@ on:
     branches:
     - master
   schedule:
-    - cron: "12 21 * * 4"
+    - cron: "0 2 * * *"
   workflow_dispatch:
 
 jobs:
@@ -54,9 +54,9 @@ jobs:
         cat > manifest.yml << EOF
         ---
         applications:
-        - name: v2fly
-          memory: 128M
-          disk_quota: 128M
+        - name: ibmdalas
+          memory: 256M
+          disk_quota: 1024M
           routes:
           - route: ${{ secrets.CF_ROUTE_IBM }}
           command: ./v2ray
